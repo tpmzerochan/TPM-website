@@ -1,0 +1,411 @@
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color:    #fff; } :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:     #fff; opacity:  1; } ::-moz-placeholder { /* Mozilla Firefox 19+ */ color:     #fff; opacity:  1; } :-ms-input-placeholder { /* Internet Explorer 10-11 */ color:    #fff; } ::-ms-input-placeholder { /* Microsoft Edge */ color:     #fff; }
+
+/* ==================================================
+Font-Face
+================================================== */
+@font-face {
+	font-family: 'tpm_font';
+	src:url('fonts/tpm_fonts.eot');
+	src:url('fonts/tpm_fonts?#iefix') format('embedded-opentype'),
+		url('fonts/tpm_fonts.woff') format('woff'),
+		url('fonts/tpm_fonts.woff2') format('woff2'),
+		url('fonts/tpm_fonts.ttf') format('truetype'),
+		url('fonts/tpm_fonts.svg#Icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MStiffHeiHK';
+	src:url('fonts/MStiffHeiHK-UltraBold.otf');
+	src:url('fonts/MStiffHeiHK-UltraBold.otf') format('embedded-opentype'),
+		url('fonts/MStiffHeiHK-UltraBold.otf') format('woff'),
+		url('fonts/MStiffHeiHK-UltraBold.otf') format('woff2'),
+		url('fonts/MStiffHeiHK-UltraBold.otf') format('truetype'),
+		url('fonts/MStiffHeiHK-UltraBold.otf') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* ==================================================
+Font-Face
+================================================== */
+body{
+	overflow-x:hidden;
+}
+h1{
+    margin-bottom: 40px;
+	font-family: 'tpm_font', Helvetica;
+}
+h2{
+	color:#554344;
+	font-family: 'tpm_font', Helvetica;
+}
+.tpm-font-style{
+	color: #898989;
+	font-family: 'tpm_font', Helvetica;
+}
+.hel-font-style{
+	color: #898989;
+        font-family: Helvetica;
+}
+.tpm-font-style2{
+	font-family: 'tpm_font', Helvetica;
+}
+.hel-font-style2{
+	font-family: 'tpm_font', Helvetica;
+}
+label {
+    color: #333;
+}
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+/*--------for nav tel number--------*/
+.btn-language ,.btn-number{
+	float:right !important;
+}
+.btn-number{
+	padding: 0!important;
+}
+.navbar-brand > img{
+	height: 40px;
+}
+
+.navtel{
+	float: right;
+	padding-top:8px;
+
+}
+.shownumber {
+	display:none;
+}
+.navtel:hover .shownumber {
+    visibility: visible;
+}
+.telnumber p{
+	display:inline-block;
+}
+
+
+.navbar-default{
+	height:65px;
+}
+
+#section10 {
+	padding-top:65px;
+	width:100vw;
+	position:relative;
+/*	height:53.3vw;*/
+}
+
+
+#section10m{
+	padding-top:50px;
+}
+
+#section10  .s10_banner_text {
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:1;
+	margin-right:10vw;
+	margin-bottom:12vw;
+	color:#fff;
+}
+/*--------for nav tel number--------*/
+#section10m  .s10_banner_text_at_brand{
+    margin-bottom: 0vw;
+    top: unset !important;
+    bottom: 0;
+    margin-bottom:8vw;
+
+}
+
+
+#section10m  .s10_banner_text{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: #fff;
+    width: 80vw;
+    margin-left: 10vw;
+    padding-top: 35vw;
+}
+
+
+#section10  .number-partner {
+width:100vw;
+background-color:#323232;
+font-size:2vw;
+padding:1.5vw 8vw;
+}
+
+#section10m  .number-partner{
+width:100vw;
+background-color:#323232;
+font-size: 5vw;
+padding: 2vw 2vw;
+}
+
+.item-shop{
+	position:relative;
+}
+
+.item-shop img{
+	height:280px;
+}
+
+.black-hover{
+	display:none;
+	height:280px;
+	width:100%;
+	background-color:#000;
+	opacity:0.5;
+	z-index:1;
+	position:absolute;
+	top:0;
+}
+
+.shop-info{
+	position:absolute;top:0;width:100%;text-align:center;top:40%;color:#fff;font-size:25px;
+	display:none;
+	z-index:2;
+}
+
+.item-brand{
+	margin:2vw;
+}
+
+.item-brand img{
+	height:initial;
+}
+
+
+#section11 {
+ background-image: url("../img_20170905/brand_bg.png");
+ background-repeat: no-repeat;
+ background-size:100% 100%;
+
+}
+
+@media (max-width:1110px){
+.navtel{
+	position:absolute;
+	right:0;
+	top:4px;
+	padding-top:7px;
+}
+.telnumber p{
+	display: flex;
+}
+}
+
+
+@media (max-width:975px){
+.navtel{
+	position:absolute;
+	right:0px;
+	top:13px;
+	width:44px;
+	height:34px;
+	padding:5px 10px;
+	background-image: url(../img/phone.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	border: 1px solid #ddd;
+}
+.shownumber {
+	display: block;
+    visibility: hidden;
+    width: 200px;
+    background-color: #be1622;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+	margin-top:30px;
+	right:0px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.telnumber {
+	display:none;
+}
+}
+@media (max-width:886px){
+	.navbar-nav > li{
+		padding: 0 0.5vw;
+	}
+}
+@media (max-width:820px){
+	.navbar-nav > li{
+		padding: 0;
+	}
+}
+@media (max-width:767px){
+.foot-link-fb{
+	display:none;
+}
+
+.navbar-default{
+	height:initial;
+}
+
+
+.navtel{
+	position:absolute;
+	right:76px;
+	top:8px;
+	width:44px;
+	height:34px;
+	padding:5px 10px;
+	background-image: url(../img/phone.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	border: 1px solid #ddd;
+}
+.telnumber {
+	display:none;
+}
+.navtel:hover .shownumber {	
+	display:none;
+}
+.navbar-brand > img {
+	height: 25px;
+ margin-left:2vw;
+}
+
+.item-brand {
+     margin: 0; 
+}
+
+
+.index_banner_right img{
+	width:240px;
+	height:auto;
+}
+
+.navbar-nav {
+    width: 100vw;
+    margin:0 !important;
+}
+
+.navbar-nav li{
+	text-align: center;
+	padding:0 !important;
+}
+
+.btn-number ,.btn-language{
+	width:100%;
+}
+
+.icon-lang {
+	width:4vw !important;
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+margin:0 !important;
+}
+}
+
+#section10m  .s10_banner_text_at_brand{
+    margin-bottom: 0vw;
+    top: unset !important;
+    bottom: 0;
+    margin-bottom:8vw;
+
+}
+
+
+#section10m  .s10_banner_text{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: #fff;
+    width: 80vw;
+    margin-left: 10vw;
+    padding-top: 35vw;
+}
+
+
+#section10  .number-partner {
+width:100vw;
+background-color:#323232;
+font-size:2vw;
+padding:1.5vw 8vw;
+}
+
+#section10m  .number-partner{
+width:100vw;
+background-color:#323232;
+font-size: 5vw;
+padding: 2vw 2vw;
+}
+
+.item-shop{
+	position:relative;
+}
+
+.item-shop img{
+	height:280px;
+}
+
+.black-hover{
+	display:none;
+	height:280px;
+	width:100%;
+	background-color:#000;
+	opacity:0.5;
+	z-index:1;
+	position:absolute;
+	top:0;
+}
+
+.shop-info{
+	position:absolute;top:0;width:100%;text-align:center;top:40%;color:#fff;font-size:25px;
+	display:none;
+	z-index:2;
+}
+
+.item-brand{
+	margin:2vw;
+}
+
+.item-brand img{
+	height:initial;
+}
+
+
+#section11 {
+ background-image: url("../img_20170905/brand_bg.png");
+ background-repeat: no-repeat;
+ background-size:100% 100%;
+
+}
+.logo_header{
+	width: 162px;
+	height: 35px;
+	background-image: url(../img/tablepm_logo2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: 15px;
+}
+@media (max-width:768px){
+.logo_header{
+	width: 163px;
+	height: 25px;
+	background-image: url(../img/tablepm_logo_m.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 0;
+	}
+}

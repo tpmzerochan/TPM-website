@@ -1,0 +1,233 @@
+h1, h2, h3{
+	font-family: 'MStiffHeiHK';
+}
+.home{
+	background-image: url(../img/bg_home_part1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+.home .business{
+	width: 100vw;
+	height: 250px;
+	position: absolute;
+	bottom: 36px;
+	background-color: RGBA(255, 255, 255, 0.8);
+	box-shadow: 0 0 30px RGBA(0, 0, 0, 0.2);
+}
+.home .business .btn3{
+	width: 33.33vw;
+	height: 250px;
+	float: left;
+	border-left: 1px solid #ddd;
+	position: relative;
+}
+.home .business .btn3.btn_first{
+	border-left:none;
+}
+.home_logo{
+	width: 100vw;
+	height: calc(100% - 270px);
+	position: relative;
+}
+.home_logo img{
+	width: 60vw;
+	max-width: 360px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.home .business .content{
+	position: relative;
+}
+.home .business .content{
+	width: 340px;
+    height: 140px;
+	margin: 50px auto;
+}
+.home .business .content img{
+	float: left;
+	margin-top: 18px;
+	margin-right: 20px;
+}
+.home .business .content .text{
+	float: left;
+}
+.home .business.content_en .content .text{
+    width: 220px;
+}
+.home .business .content .text h2{
+	font-size: 38px;
+}
+.home .business .content .text h4{
+	color: #000;
+}
+.home .business.content_en .content .text h4{
+	color: #000;
+	font-size: 14px;
+}
+.home .business .content .btn_more{
+	border-radius: 3px;
+    width: 82px;
+	padding: 5px 10px;
+    text-align: center;
+}
+.home .business .btn_first .content h2{
+	color: #fc4069;
+}
+.home .business .btn_second .content h2{
+	color: #dc202c;
+}
+.home .business .btn_third .content h2{
+	color: #ec6139;
+}
+.home .business .content .btn_more{
+	color: #fff;
+	cursor: pointer;
+}
+.home .business .btn_first .content .btn_more{
+	background-color: #fc4069;
+}
+.home .business .btn_second .content .btn_more{
+	background-color: #dc202c;
+}
+.home .business .btn_third .content .btn_more{
+	background-color: #ec6139;
+}
+.home .business .content .btn_more:hover, .home .business .content .btn_more:active, .home .business .content .btn_more:hover a, .home .business .content .btn_more:active a{
+	background-color: #000;
+	text-decoration: underline;
+}
+@media (max-width:1050px){
+	.home .business, .home .business .btn3{
+		height: 200px;
+	}
+	.home .business .content img, .home .business .content .text{
+		float: inherit;
+		margin: 0 10px;
+		position: relative;
+	}
+	.home .business .content{
+		height: inherit;
+		width: auto;
+		margin: 0;
+		text-align: center;
+	}
+	.home .business .content img{
+		margin-right: 0;
+		margin-top: 10px;
+	}
+	.home .business .content .btn_more{
+		margin: 0 auto;
+	}
+	.home .business .content h2, .home .business .content h4{
+		text-align: left;
+		width: 90%;
+		margin: inherit;
+	}
+	.home .business .content .btn_more{
+		position: absolute;
+		right: 10px;
+		top: 4px;
+	}
+	.home .business .content .text h2{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.home .business.content_en .content .text{
+		width: auto;
+	}
+}
+@media (max-width:770px){
+	
+	.home_logo{
+		height: 40vh;
+	}
+	.home .business{
+    	height: 60vh;
+	}
+	.home .business .btn3{
+		width: 100vw;
+		height: 20vh;
+		float: inherit;
+		border-left: none;
+		border-bottom: 1px solid #ddd;
+		
+	}
+	.home .business .content img{
+		display: inline-block;
+		width: 80px;
+		top: 40%;
+		transform: translateY(-50%);
+		margin-top: 0;
+	}
+	.home .business.content_en .btn_first .content img{
+		top: 41%;
+	}
+	.home .business.content_en .btn_second .content img{
+		top: 28%;
+	}
+	.home .business.content_en .btn_third .content img{
+		top: 21%;
+	}
+	.home .business .content .text, .home .business.content_en .content .text{
+		width: 330px;
+		display: inline-block;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.home .business .content h2, .home .business .content h4{
+		width: 70%;
+	}
+}
+@media (max-width:450px){
+	.home .business .content img{
+		top: 43%;
+	}
+	.home .business .content .text{
+		width: 250px;
+	}
+	.home .business .content h2, .home .business .content h4{
+		width: 55%;
+	}
+	.home .business.content_en .content h2, .home .business .content h4{
+		width: 55%;
+	}
+	.home .business .content .text h2{
+		font-size: 28px;
+	}
+	.home .business .content h4{
+		font-size: 14px;
+	}
+	.home .business .content .btn_more{
+		top: 15px;
+	}
+	.home .business.content_tc .btn_first .content img{
+		top: 35%;
+	}
+	.home .business.content_tc .btn_second .content img{
+		top: 42%;
+	}
+	.home .business.content_tc .btn_third .content img{
+		top: 32%;
+	}
+	
+	.home .business.content_en .content .text{
+		width: 250px;
+		margin: 0 0 0 5px;
+	}
+	.home .business.content_en .content h2{
+		font-size: 25px; 
+	}
+	.home .business.content_en .content h4{
+		width: 100%;
+	}
+	.home .business.content_en .content .btn_more{
+		top: 0;
+		right: 0;
+	}
+}

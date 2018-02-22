@@ -1,0 +1,16 @@
+/* CSS Document */
+@font-face {
+  	font-family:'tpm_font';
+  	src: url('tpm_font/tpm_font.eot');
+  	src: url('tpm_font/tpm_font.eot?#iefix') format('embedded-opentype'), 
+  	     url('tpm_font/tpm_font.woff') format('woff'), 
+  	     url('tpm_font/tpm_font.ttf') format('truetype'), 
+  	     url('tpm_font/tpm_font.svg') format('svg'),
+		 url('tpm_font/tpm_font.otf') format('otf');
+  	font-weight: normal;
+  	font-style: normal;
+}
+body {
+	overflow-x: hidden;
+	font-family:'tpm_font', Helvetica;
+}
